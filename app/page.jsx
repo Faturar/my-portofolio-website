@@ -7,7 +7,13 @@ import('tailwindcss').Config
 
 // image
 import main from '../public/assets/img/main.svg'
+import reactjs from '../public/assets/icon/reactjs.svg'
+import css from '../public/assets/icon/css.svg'
+import html from '../public/assets/icon/html.svg'
+import tailwind from '../public/assets/icon/tailwind.svg'
 import portfolioAes from '../public/assets/img/portfolio-aes.png'
+import portfolioGym from '../public/assets/img/portfolio-gym.png'
+import portfolioMov from '../public/assets/img/portfolio-mov.png'
 import serviceHtml from '../public/assets/img/service-html.png'
 import serviceReact from '../public/assets/img/service-react-next.png'
 import serviceWordpress from '../public/assets/img/service-wordpress.png'
@@ -26,7 +32,7 @@ export default function Home() {
         {/* Header */}
         <section id="header">
           <div className="container">
-            <div className="flex relative -z-10">
+            <div className="flex relative">
               <div className='py-24 md:py-32' data-aos="fade-right" data-aos-duration="1600" data-aos-delay="1000">
                 <span className='text-primary font-bold text-lg md:text-xl'>Hello Everyone <span className='animate-wave inline-block w-8'>👋</span>, I'm</span>
                 <h1 className="text-[48px] leading-tight md:leading-normal font-bold text-main mt-2 md:mt-3">
@@ -36,9 +42,9 @@ export default function Home() {
                 <p className='text-secondary text-lg md:text-xl mt-4 md:max-w-[640px]'>
                   I'm a self-taught developer who loves to learn about coding, design, and exploring new things in depth.
                 </p>
-                <button className='btn btn-primary mt-16 border-box'>
-                  Contact
-                </button>
+                <div className='mt-16'>
+                  <Link href={'/contact'} className='btn btn-primary'>Contact</Link>
+                </div>
               </div>
               <div className='absolute hidden xl:block -right-28 top-12' data-aos="fade-left" data-aos-duration="1600" data-aos-delay="1000">
                 <Image
@@ -80,120 +86,159 @@ export default function Home() {
               </div>
 
               <div className="flex-1 pl-20" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="300">
-                <h4 className='text-3xl font-bold text-main'>PT. Serunting Sakti Jaya website</h4>
-                <p className='mt-3 text-secondary text-lg'>Website for managing stock of goods and transactions made by stores.</p>
+                <h4 className='text-3xl font-bold text-main'>Aes Shop - Plant Shop Website</h4>
+                <p className='mt-4 text-secondary text-lg'>Webiste where you can browse and purchase a variety of plants, gardening supplies and tools. It also provide helpful resources, such as plant care guides and information about the different types of plants available.</p>
                 <div className='mt-3 text-secondary'>
                   <span>Tech Stack:</span>
+
+                  {/* Tech stack */}
                   <div className='flex items-center flex-wrap gap-x-4 mt-4'>
                     <div className='flex'>
                       <Image
-                        src={main}
-                        alt="Logo"
-                        height={24}
+                        src={html}
+                        alt=""
+                        height={20}
                       />
-                      <span>Wordpress</span>
+                      <span className='ml-2'>HTML</span>
                     </div>
                     <div className='flex'>
                       <Image
-                        src={main}
-                        alt="Logo"
-                        height={24}
+                        src={css}
+                        alt=""
+                        height={20}
                       />
-                      <span>Codeignither 4</span>
+                      <span className='ml-2'>CSS</span>
                     </div>
                     <div className='flex'>
                       <Image
-                        src={main}
-                        alt="Logo"
-                        height={24}
+                        src={tailwind}
+                        alt=""
+                        height={20}
                       />
-                      <span>Codeignither 4</span>
+                      <span className='ml-2'>Tailwind</span>
                     </div>
                     <div className='flex'>
                       <Image
-                        src={main}
-                        alt="Logo"
-                        height={24}
+                        src={reactjs}
+                        alt=""
+                        height={20}
                       />
-                      <span>Codeignither 4</span>
-                    </div>
-                    <div className='flex'>
-                      <Image
-                        src={main}
-                        alt="Logo"
-                        height={24}
-                      />
-                      <span>Codeignither 4</span>
+                      <span className='ml-2'>React Js</span>
                     </div>
                   </div>
                 </div>
                 <div className='mt-12'>
-                  <Link href="#" className='text-primary'>
+                  <Link href="#" className='text-primary hover:text-primary-active transition-all duration-300'>
                     <span className='align-middle text-lg font-semibold'>View Demo</span>
                     <i className='bx bx-right-arrow-alt text-xl ml-1 align-middle'></i>
                   </Link>
                 </div>
               </div>
             </div>
+
+            {/* Item 2 */}
             <div className="flex items-center mt-16">
               <div className="flex-1" data-aos="fade-right" data-aos-duration="1500">
                 <Image
-                  src={main}
+                  src={portfolioGym}
                   alt="Logo"
                   height={400}
                 />
               </div>
 
               <div className="flex-1 pl-20" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="300">
-                <h4 className='text-3xl font-bold text-main'>PT. Serunting Sakti Jaya website</h4>
-                <p className='mt-3 text-secondary text-lg'>Website for managing stock of goods and transactions made by stores.</p>
+                <h4 className='text-3xl font-bold text-main'>Fit Body - Gym Webiste</h4>
+                <p className='mt-4 text-secondary text-lg'>Website that provides information about a physical fitness center. It typically includes details about the gym's location, hours of operation, membership options, class schedules, and other services offered.</p>
                 <div className='mt-3 text-secondary'>
                   <span>Tech Stack:</span>
                   <div className='flex items-center flex-wrap gap-x-4 mt-4'>
                     <div className='flex'>
                       <Image
-                        src={main}
-                        alt="Logo"
-                        height={24}
+                        src={html}
+                        alt=""
+                        height={20}
                       />
-                      <span>Wordpress</span>
+                      <span className='ml-2'>HTML</span>
                     </div>
                     <div className='flex'>
                       <Image
-                        src={main}
-                        alt="Logo"
-                        height={24}
+                        src={css}
+                        alt=""
+                        height={20}
                       />
-                      <span>Codeignither 4</span>
+                      <span className='ml-2'>CSS</span>
                     </div>
                     <div className='flex'>
                       <Image
-                        src={main}
-                        alt="Logo"
-                        height={24}
+                        src={reactjs}
+                        alt=""
+                        height={20}
                       />
-                      <span>Codeignither 4</span>
-                    </div>
-                    <div className='flex'>
-                      <Image
-                        src={main}
-                        alt="Logo"
-                        height={24}
-                      />
-                      <span>Codeignither 4</span>
-                    </div>
-                    <div className='flex'>
-                      <Image
-                        src={main}
-                        alt="Logo"
-                        height={24}
-                      />
-                      <span>Codeignither 4</span>
+                      <span className='ml-2'>React Js</span>
                     </div>
                   </div>
                 </div>
                 <div className='mt-12'>
-                  <Link href="#" className='text-primary'>
+                  <Link href="https://react-gym-faturar.netlify.app/" target="_blank" className='text-primary hover:text-primary-active transition-all duration-300'>
+                    <span className='align-middle text-lg font-semibold'>View Demo</span>
+                    <i className='bx bx-right-arrow-alt text-xl ml-1 align-middle'></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Item 3 */}
+            <div className="flex items-center mt-16">
+              <div className="flex-1" data-aos="fade-right" data-aos-duration="1500">
+                <Image
+                  src={portfolioMov}
+                  alt="Logo"
+                  height={400}
+                />
+              </div>
+
+              <div className="flex-1 pl-20" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="300">
+                <h4 className='text-3xl font-bold text-main'>Mov Movie - Movie Search Website</h4>
+                <p className='mt-4 text-secondary text-lg'>Website that allows users to search for and find information about movies, such as title, release date, cast, and plot summary. Users can typically search by keywords, browse by genre or year, and view trailers and reviews.</p>
+                <div className='mt-3 text-secondary'>
+                  <span>Tech Stack:</span>
+                  <div className='flex items-center flex-wrap gap-x-4 mt-4'>
+                    <div className='flex'>
+                      <Image
+                        src={html}
+                        alt=""
+                        height={20}
+                      />
+                      <span className='ml-2'>HTML</span>
+                    </div>
+                    <div className='flex'>
+                      <Image
+                        src={css}
+                        alt=""
+                        height={20}
+                      />
+                      <span className='ml-2'>CSS</span>
+                    </div>
+                    <div className='flex'>
+                      <Image
+                        src={tailwind}
+                        alt=""
+                        height={20}
+                      />
+                      <span className='ml-2'>Tailwind</span>
+                    </div>
+                    <div className='flex'>
+                      <Image
+                        src={reactjs}
+                        alt=""
+                        height={20}
+                      />
+                      <span className='ml-2'>React Js</span>
+                    </div>
+                  </div>
+                </div>
+                <div className='mt-12'>
+                  <Link href="https://mov-movie.web.app/" target="_blank" className='text-primary hover:text-primary-active transition-all duration-300'>
                     <span className='align-middle text-lg font-semibold'>View Demo</span>
                     <i className='bx bx-right-arrow-alt text-xl ml-1 align-middle'></i>
                   </Link>
@@ -203,7 +248,7 @@ export default function Home() {
 
             {/* Button */}
             <div className='flex justify-center mt-28' data-aos="fade-up" data-aos-duration="1500" data-aos-offset="200">
-              <button className='btn btn-primary'>View All Work</button>
+              <Link href={'/work'} className='btn btn-primary'>View All Work</Link>
             </div>
           </div>
         </section>
@@ -218,12 +263,12 @@ export default function Home() {
                 Help convert your design
               </h1>
               <p className='text-secondary text-lg text-center md:max-w-[520px]'>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, dolor. Aliquam possimus inventore quod sint?
+                Service that takes a design and converts it into functioning code for a website or application. 
               </p>
             </div>
 
             <div className="flex mt-16 text-white">
-              <div className="flex-1 bg-primary p-8 mr-3 rounded" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="100">
+              <div className="flex-1 bg-primary p-8 mr-3 rounded" data-aos="fade-up" data-aos-duration="1500">
                 <Image
                   src={serviceHtml}
                   alt="Logo"
@@ -235,7 +280,7 @@ export default function Home() {
                   <p className='mt-2'>I will convert your design into a responsive, accessible and animated html template.</p>
                 </div>
               </div>
-              <div className="flex-1 bg-primary p-8 mx-3 rounded" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100" data-aos-offset="200">
+              <div className="flex-1 bg-primary p-8 mx-3 rounded" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100" data-aos-offset="100">
                 <Image
                   src={serviceReact}
                   alt="Logo"
@@ -247,7 +292,7 @@ export default function Home() {
                   <p className='mt-2'>I will convert your design into a responsive, accessible and animated html template.</p>
                 </div>
               </div>
-              <div className="flex-1 bg-primary p-8 ml-3 rounded" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200" data-aos-offset="300">
+              <div className="flex-1 bg-primary p-8 ml-3 rounded" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200" data-aos-offset="200">
                 <Image
                   src={serviceWordpress}
                   alt="Logo"
@@ -273,11 +318,11 @@ export default function Home() {
                 Let’s talk about project
               </h1>
               <p className='text-secondary text-lg text-center md:max-w-[520px] mt-4'>
-                Website for managing stock of goods and transactions made by stores.
+                If you want to collaborate with me or get more information about our service, please contact me.
               </p>
             </div>
             <div className='mt-16'>
-              <button className='btn btn-primary mr-6' data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">Contact Now</button>
+              <Link href={'/contact'} className='btn btn-primary mr-6' data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">Contact Now</Link>
               <button className='btn btn-primary-outline' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="100">Download CV</button>
             </div>
           </div>
