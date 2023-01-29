@@ -3,7 +3,7 @@ import Loader from '../Loader'
 import Navbar from '../Navbar'
 import Footer from '../Footer'
 
-function about() {
+function services() {
   return (
     <>
       <Loader />
@@ -12,7 +12,7 @@ function about() {
         <div className="container flex flex-col mt-36">
           {/* Header */}
           <div className="flex flex-col items-center header text-center" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="100">
-              <span className='text-primary font-bold text-lg'>About</span>
+              <span className='text-primary font-bold text-lg'>Services</span>
               <h1 className="text-[40px] leading-tight md:leading-normal font-bold text-main">
                 Under Construction
               </h1>
@@ -27,4 +27,4 @@ function about() {
   )
 }
 
-export default about
+export default services
