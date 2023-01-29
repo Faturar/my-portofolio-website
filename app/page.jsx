@@ -1,4 +1,3 @@
-import { Mulish } from '@next/font/google'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -21,14 +20,12 @@ import Loader from './Loader'
 import Navbar from './Navbar'
 import Footer from './Footer'
 
-const mulish = Mulish({ subsets: ['latin'] })
-
 export default function Home() {
   return (
     <>
       <Loader />
       <Navbar />
-      <main className={`${mulish.className} overflow-hidden`}>
+      <main className={`overflow-hidden`}>
         {/* Header */}
         <section id="header">
           <div className="container">
@@ -49,7 +46,7 @@ export default function Home() {
               <div className='absolute hidden xl:block -right-28 top-12' data-aos="fade-left" data-aos-duration="1600" data-aos-delay="1000">
                 <Image
                   src={main}
-                  alt="Logo"
+                  alt=""
                   width={800}
                 />
               </div>
@@ -62,15 +59,15 @@ export default function Home() {
 
         {/* Portfolio */}
         <section id="portfolio">
-          <div className="container flex flex-col mt-28">
+          <div className="container flex flex-col mt-36">
 
             {/* Header */}
-            <div className="flex flex-col items-center header text-center" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="100">
-              <span className='text-primary font-bold text-md md:text-lg'>Portfolio</span>
-              <h1 className="text-4xl md:text-[40px] leading-tight md:leading-normal font-bold text-main">
+            <div className="header" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="100">
+              <span className='header-title'>Portfolio</span>
+              <h1 className="header-title-main">
                 Selected Project
               </h1>
-              <p className='text-secondary text-md md:text-lg text-center md:max-w-[520px]'>
+              <p className='header-description'>
                 My portfolio showcases the various projects I have worked on, that I create.
               </p>
             </div>
@@ -80,7 +77,7 @@ export default function Home() {
               <div className="flex-1" data-aos="fade-right" data-aos-duration="1500">
                 <Image
                   src={portfolioAes}
-                  alt="Logo"
+                  alt=""
                   height={400}
                 />
               </div>
@@ -141,7 +138,7 @@ export default function Home() {
               <div className="flex-1" data-aos="fade-right" data-aos-duration="1500">
                 <Image
                   src={portfolioGym}
-                  alt="Logo"
+                  alt=""
                   height={400}
                 />
               </div>
@@ -192,7 +189,7 @@ export default function Home() {
               <div className="flex-1" data-aos="fade-right" data-aos-duration="1500">
                 <Image
                   src={portfolioMov}
-                  alt="Logo"
+                  alt=""
                   height={400}
                 />
               </div>
@@ -257,12 +254,12 @@ export default function Home() {
         <section id="services" className='bg-primary-light w-full h-full mt-48 py-28'>
           <div className="container">
             {/* Header */}
-            <div className="flex flex-col items-center header text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
-              <span className='text-primary font-bold text-md md:text-lg'>Services</span>
-              <h1 className="text-4xl md:text-[40px] leading-tight md:leading-normal font-bold text-main">
+            <div className="header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
+              <span className='header-title'>Services</span>
+              <h1 className="header-title-main">
                 Help convert your design
               </h1>
-              <p className='text-secondary text-md md:text-lg text-center md:max-w-[520px]'>
+              <p className='header-description'>
                 Service that takes a design and converts it into functioning code for a website or application. 
               </p>
             </div>
@@ -271,7 +268,7 @@ export default function Home() {
               <div className="flex-1 bg-primary p-8 md:mr-3 mb-4 md:mb-0 rounded" data-aos="fade-up" data-aos-duration="1500">
                 <Image
                   src={serviceHtml}
-                  alt="Logo"
+                  alt=""
                   height={400}
                 />
 
@@ -283,7 +280,7 @@ export default function Home() {
               <div className="flex-1 bg-primary p-8 md:mx-3 mb-4 md:mb-0 rounded" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100" data-aos-offset="100">
                 <Image
                   src={serviceReact}
-                  alt="Logo"
+                  alt=""
                   height={400}
                 />
 
@@ -295,7 +292,7 @@ export default function Home() {
               <div className="flex-1 bg-primary p-8 md:ml-3 rounded" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200" data-aos-offset="200">
                 <Image
                   src={serviceWordpress}
-                  alt="Logo"
+                  alt=""
                   height={400}
                 />
 
@@ -312,13 +309,13 @@ export default function Home() {
         <section id="contact" className='py-64'>
           <div className="container">
             {/* Header */}
-            <div className="flex flex-col items-center header text-center">
+            <div className="header">
               <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
-                <span className='text-primary font-bold text-md md:text-lg'>Contact</span>
-                <h1 className="text-4xl md:text-[40px] leading-tight md:leading-normal font-bold text-main">
+                <span className='header-title'>Contact</span>
+                <h1 className="header-title-main">
                   Let’s talk about project
                 </h1>
-                <p className='text-secondary text-md md:text-lg text-center md:max-w-[520px] mt-4'>
+                <p className='header-description mt-4'>
                   If you want to collaborate with me or get more information about our service, please contact me.
                 </p>
               </div>

@@ -1,11 +1,14 @@
 "use client"
 
 import { useEffect } from 'react';
+import { Mulish } from '@next/font/google'
 
 import './globals.css';
 import AOS from 'aos';
 
 import "aos/dist/aos.css";
+
+const mulish = Mulish({ subsets: ['latin'] })
 
 export default function RootLayout({ children }) {
   useEffect(() => {
@@ -21,7 +24,7 @@ export default function RootLayout({ children }) {
       */}
 
       <head />
-      <body className='relative'>
+      <body className={`${mulish.className} relative`}>
         {children}
       </body>
     </html>
