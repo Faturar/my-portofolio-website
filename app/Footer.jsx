@@ -5,22 +5,22 @@ function Footer() {
     <footer className='bg-primary text-white text-center px-12'>
         <div className='flex justify-center items-center py-8 space-x-4'>
             <div className='border py-[7px] px-[10px] rounded-lg'>
-                <Link href={'https://www.instagram.com/faturar.dev/'} className='text-xl'>
+                <Link href={'https://www.instagram.com/faturar.dev/'} target={'_blank'} className='text-xl'>
                     <i className='bx bxl-instagram'></i>
                 </Link>
             </div>
             <div className='border py-[7px] px-[10px] rounded-lg'>
-                <Link href={'https://www.facebook.com/faturardev'} className='text-xl'>
+                <Link href={'https://www.facebook.com/faturardev'} target={'_blank'} className='text-xl'>
                     <i className='bx bxl-facebook'></i>
                 </Link>
             </div>
             <div className='border py-[7px] px-[10px] rounded-lg'>
-                <Link href={'www.linkedin.com/in/faturar'} className='text-xl'>
+                <Link href={'https://www.linkedin.com/in/faturar'} target={'_blank'} className='text-xl'>
                     <i className='bx bxl-linkedin'></i>
                 </Link>
             </div>
             <div className='border py-[7px] px-[10px] rounded-lg'>
-                <Link href={'mailto:faturardev@email.com'} className='text-xl'>
+                <Link href={'mailto:faturardev@email.com'} target={'_blank'} className='text-xl'>
                     <i className='bx bx-envelope'></i>
                 </Link>
             </div>
