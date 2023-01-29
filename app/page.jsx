@@ -322,8 +322,8 @@ export default function Home() {
                   If you want to collaborate with me or get more information about our service, please contact me.
                 </p>
               </div>
-              <div className='mt-16'>
-                <Link href={'/contact'} className='py-4 px-8 btn-primary mr-6' data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">Contact Now</Link>
+              <div className='mt-16 w-full md:w-[360px] flex justify-center md:justify-between flex-wrap space-y-4 md:space-y-0'>
+                <Link href={'/contact'} className='py-3.5 px-8 btn-primary' data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">Contact Now</Link>
                 <button className='btn btn-primary-outline' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="100">Download CV</button>
               </div>
             </div>
