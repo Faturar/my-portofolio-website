@@ -38,7 +38,7 @@ export default function Home() {
                 <h1 className="text-[48px] leading-tight md:leading-normal font-bold text-main mt-2 md:mt-3">
                   Fatur Ardiansyah Ramadhan
                 </h1>
-                <h2 className='text-secondary text-xl md:text-2xl mt-3'>Web Developer</h2>
+                <h2 className='text-secondary text-xl md:text-2xl mt-3'>Front-End Developer</h2>
                 <p className='text-secondary text-lg md:text-xl mt-4 md:max-w-[640px]'>
                   I'm a self-taught developer who loves to learn about coding, design, and exploring new things in depth.
                 </p>
