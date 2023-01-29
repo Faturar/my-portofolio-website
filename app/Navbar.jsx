@@ -28,31 +28,31 @@ function Navbar() {
       <div className={`${toggle ? 'top-28 left-0 transition-all md:transition-none' : 'top-24 -left-[800px]'} bg-white flex md:top-0 md:left-0 absolute flex-col md:flex-row md:justify-end items-center w-full h-screen md:h-full md:relative  md:bg-transparent md:space-x-12 duration-700 ease-in-out delay-150 md:transition-none text-main-text z-[99] `}>
 
         {/* Home link */}
-        <Link href="/" className={`${toggle ? 'pl-8 transition-all md:transition-none' : 'pl-0'} ${pathName == '/' ? 'text-primary' : 'text-main'} link-item md:pl-0`}>
+        <Link href="/" onClick={() => setToggle(false)} className={`${toggle ? 'pl-8 transition-all md:transition-none' : 'pl-0'} ${pathName == '/' ? 'text-primary' : 'text-main'} link-item md:pl-0`}>
           <i className='bx bx-home text-2xl md:text-xl align-middle'></i>
           <span className='ml-4 md:ml-2 text-xl md:text-base align-middle'>Home</span>
         </Link>
 
         {/* Work link */}
-        <Link href="/work" className={`${toggle ? 'pl-8 transition-all md:transition-none' : 'pl-0'}  ${pathName == '/work' ? 'text-primary' : 'text-main'} link-item`}>
+        <Link href="/work" onClick={() => setToggle(false)} className={`${toggle ? 'pl-8 transition-all md:transition-none' : 'pl-0'}  ${pathName == '/work' ? 'text-primary' : 'text-main'} link-item`}>
           <i className='bx bx-briefcase text-2xl md:text-xl align-middle'></i>
           <span className='ml-4 md:ml-2 text-xl md:text-base align-middle'>Work</span>
         </Link>
 
         {/* Services link */}
-        <Link href="/services" className={`${toggle ? 'pl-8 transition-all md:transition-none' : 'pl-0'}  ${pathName == '/services' ? 'text-primary' : 'text-main'} link-item`}>
+        <Link href="/services" onClick={() => setToggle(false)} className={`${toggle ? 'pl-8 transition-all md:transition-none' : 'pl-0'}  ${pathName == '/services' ? 'text-primary' : 'text-main'} link-item`}>
           <i className='bx bx-wrench text-2xl md:text-xl align-middle'></i>
           <span className='ml-4 md:ml-2 text-xl md:text-base align-middle'>Services</span>
         </Link>
 
         {/* About link */}
-        <Link href="/about" className={`${toggle ? 'pl-8 transition-all md:transition-none' : 'pl-0'} ${pathName == '/about' ? 'text-primary' : 'text-main'} link-item`}>
+        <Link href="/about" onClick={() => setToggle(false)} className={`${toggle ? 'pl-8 transition-all md:transition-none' : 'pl-0'} ${pathName == '/about' ? 'text-primary' : 'text-main'} link-item`}>
           <i className='bx bx-user text-2xl md:text-xl align-middle'></i>
           <span className='ml-4 md:ml-2 text-xl md:text-base align-middle'>About</span>
         </Link>
 
         {/* Contact link */}
-        <Link href="/contact" className={`${toggle ? 'pl-8 transition-all md:transition-none' : 'pl-0'} ${pathName == '/contact' ? 'text-primary' : 'text-main'} link-item`}>
+        <Link href="/contact" onClick={() => setToggle(false)} className={`${toggle ? 'pl-8 transition-all md:transition-none' : 'pl-0'} ${pathName == '/contact' ? 'text-primary' : 'text-main'} link-item`}>
           <i className='bx bx-message-rounded-dots text-2xl md:text-xl align-middle'></i>
           <span className='ml-4 md:ml-2 text-xl md:text-base align-middle'>Contact</span>
         </Link>
