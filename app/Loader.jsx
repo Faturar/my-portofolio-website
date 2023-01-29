@@ -20,7 +20,8 @@ function Loader() {
             {loading ? (
             <div className="fixed h-screen w-screen bg-white z-[1000]">
                 <div className='w-full h-full flex justify-center items-center'>
-                <Image
+                <Image 
+                    unoptimized={true}
                     src={loaderGif}
                     alt="Logo"
                     width={100}
