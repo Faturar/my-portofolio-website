@@ -66,17 +66,17 @@ export default function Home() {
 
             {/* Header */}
             <div className="flex flex-col items-center header text-center" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="100">
-              <span className='text-primary font-bold text-lg'>Portfolio</span>
-              <h1 className="text-[40px] leading-tight md:leading-normal font-bold text-main">
+              <span className='text-primary font-bold text-md md:text-lg'>Portfolio</span>
+              <h1 className="text-4xl md:text-[40px] leading-tight md:leading-normal font-bold text-main">
                 Selected Project
               </h1>
-              <p className='text-secondary text-lg text-center md:max-w-[520px]'>
+              <p className='text-secondary text-md md:text-lg text-center md:max-w-[520px]'>
                 My portfolio showcases the various projects I have worked on, that I create.
               </p>
             </div>
 
             {/* Items */}
-            <div className="flex items-center mt-24">
+            <div className="flex flex-col md:flex-row items-center mt-20">
               <div className="flex-1" data-aos="fade-right" data-aos-duration="1500">
                 <Image
                   src={portfolioAes}
@@ -85,10 +85,10 @@ export default function Home() {
                 />
               </div>
 
-              <div className="flex-1 pl-20" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="300">
-                <h4 className='text-3xl font-bold text-main'>Aes Shop - Plant Shop Website</h4>
-                <p className='mt-4 text-secondary text-lg'>Webiste where you can browse and purchase a variety of plants, gardening supplies and tools. It also provide helpful resources, such as plant care guides and information about the different types of plants available.</p>
-                <div className='mt-3 text-secondary'>
+              <div className="flex-1 mt-8 md:mt-0 md:pl-20" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="300">
+                <h4 className='text-2xl md:text-3xl font-bold text-main'>Aes Shop - Plant Shop Website</h4>
+                <p className='mt-4 text-secondary text-md md:text-lg'>Webiste where you can browse and purchase a variety of plants, gardening supplies and tools. It also provide helpful resources, such as plant care guides and information about the different types of plants available.</p>
+                <div className='mt-3 text-secondary text-md md:text-lg'>
                   <span>Tech Stack:</span>
 
                   {/* Tech stack */}
@@ -129,7 +129,7 @@ export default function Home() {
                 </div>
                 <div className='mt-12'>
                   <Link href="#" className='text-primary hover:text-primary-active transition-all duration-300'>
-                    <span className='align-middle text-lg font-semibold'>View Demo</span>
+                    <span className='align-middle text-md md:text-lg font-semibold'>View Demo</span>
                     <i className='bx bx-right-arrow-alt text-xl ml-1 align-middle'></i>
                   </Link>
                 </div>
@@ -137,7 +137,7 @@ export default function Home() {
             </div>
 
             {/* Item 2 */}
-            <div className="flex items-center mt-16">
+            <div className="flex flex-col md:flex-row items-center mt-16">
               <div className="flex-1" data-aos="fade-right" data-aos-duration="1500">
                 <Image
                   src={portfolioGym}
@@ -146,10 +146,10 @@ export default function Home() {
                 />
               </div>
 
-              <div className="flex-1 pl-20" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="300">
-                <h4 className='text-3xl font-bold text-main'>Fit Body - Gym Webiste</h4>
-                <p className='mt-4 text-secondary text-lg'>Website that provides information about a physical fitness center. It typically includes details about the gym's location, hours of operation, membership options, class schedules, and other services offered.</p>
-                <div className='mt-3 text-secondary'>
+              <div className="flex-1 mt-8 md:mt-0 md:pl-20" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="300">
+                <h4 className='text-2xl md:text-3xl font-bold text-main'>Fit Body - Gym Webiste</h4>
+                <p className='mt-4 text-secondary text-md md:text-lg'>Website that provides information about a physical fitness center. It typically includes details about the gym's location, hours of operation, membership options, class schedules, and other services offered.</p>
+                <div className='mt-3 text-secondary text-md md:text-lg'>
                   <span>Tech Stack:</span>
                   <div className='flex items-center flex-wrap gap-x-4 mt-4'>
                     <div className='flex'>
@@ -180,7 +180,7 @@ export default function Home() {
                 </div>
                 <div className='mt-12'>
                   <Link href="https://react-gym-faturar.netlify.app/" target="_blank" className='text-primary hover:text-primary-active transition-all duration-300'>
-                    <span className='align-middle text-lg font-semibold'>View Demo</span>
+                    <span className='align-middle text-md md:text-lg font-semibold'>View Demo</span>
                     <i className='bx bx-right-arrow-alt text-xl ml-1 align-middle'></i>
                   </Link>
                 </div>
@@ -188,7 +188,7 @@ export default function Home() {
             </div>
 
             {/* Item 3 */}
-            <div className="flex items-center mt-16">
+            <div className="flex flex-col md:flex-row items-center mt-16">
               <div className="flex-1" data-aos="fade-right" data-aos-duration="1500">
                 <Image
                   src={portfolioMov}
@@ -197,10 +197,10 @@ export default function Home() {
                 />
               </div>
 
-              <div className="flex-1 pl-20" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="300">
-                <h4 className='text-3xl font-bold text-main'>Mov Movie - Movie Search Website</h4>
-                <p className='mt-4 text-secondary text-lg'>Website that allows users to search for and find information about movies, such as title, release date, cast, and plot summary. Users can typically search by keywords, browse by genre or year, and view trailers and reviews.</p>
-                <div className='mt-3 text-secondary'>
+              <div className="flex-1 mt-8 md:mt-0 md:pl-20" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="300">
+                <h4 className='text-2xl md:text-3xl font-bold text-main'>Mov Movie - Movie Search Website</h4>
+                <p className='mt-4 text-secondary text-md md:text-lg'>Website that allows users to search for and find information about movies, such as title, release date, cast, and plot summary. Users can typically search by keywords, browse by genre or year, and view trailers and reviews.</p>
+                <div className='mt-3 text-secondary text-md md:text-lg'>
                   <span>Tech Stack:</span>
                   <div className='flex items-center flex-wrap gap-x-4 mt-4'>
                     <div className='flex'>
@@ -239,7 +239,7 @@ export default function Home() {
                 </div>
                 <div className='mt-12'>
                   <Link href="https://mov-movie.web.app/" target="_blank" className='text-primary hover:text-primary-active transition-all duration-300'>
-                    <span className='align-middle text-lg font-semibold'>View Demo</span>
+                    <span className='align-middle text-md md:text-lg font-semibold'>View Demo</span>
                     <i className='bx bx-right-arrow-alt text-xl ml-1 align-middle'></i>
                   </Link>
                 </div>
@@ -258,17 +258,17 @@ export default function Home() {
           <div className="container">
             {/* Header */}
             <div className="flex flex-col items-center header text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
-              <span className='text-primary font-bold text-lg'>Services</span>
-              <h1 className="text-[40px] leading-tight md:leading-normal font-bold text-main">
+              <span className='text-primary font-bold text-md md:text-lg'>Services</span>
+              <h1 className="text-4xl md:text-[40px] leading-tight md:leading-normal font-bold text-main">
                 Help convert your design
               </h1>
-              <p className='text-secondary text-lg text-center md:max-w-[520px]'>
+              <p className='text-secondary text-md md:text-lg text-center md:max-w-[520px]'>
                 Service that takes a design and converts it into functioning code for a website or application. 
               </p>
             </div>
 
-            <div className="flex mt-16 text-white">
-              <div className="flex-1 bg-primary p-8 mr-3 rounded" data-aos="fade-up" data-aos-duration="1500">
+            <div className="flex flex-col md:flex-row mt-16 text-white">
+              <div className="flex-1 bg-primary p-8 md:mr-3 mb-4 md:mb-0 rounded" data-aos="fade-up" data-aos-duration="1500">
                 <Image
                   src={serviceHtml}
                   alt="Logo"
@@ -276,11 +276,11 @@ export default function Home() {
                 />
 
                 <div className='mt-8 text-center'>
-                  <h4 className='text-2xl font-bold'>Design to HTML</h4>
+                  <h4 className='text-xl md:text-2xl font-bold'>Design to HTML</h4>
                   <p className='mt-2'>I will convert your design into a responsive, accessible and animated html template.</p>
                 </div>
               </div>
-              <div className="flex-1 bg-primary p-8 mx-3 rounded" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100" data-aos-offset="100">
+              <div className="flex-1 bg-primary p-8 md:mx-3 mb-4 md:mb-0 rounded" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100" data-aos-offset="100">
                 <Image
                   src={serviceReact}
                   alt="Logo"
@@ -288,11 +288,11 @@ export default function Home() {
                 />
 
                 <div className='mt-8 text-center'>
-                  <h4 className='text-2xl font-bold'>Design to React JS / Next JS</h4>
+                  <h4 className='text-xl md:text-2xl font-bold'>Design to React JS / Next JS</h4>
                   <p className='mt-2'>I will convert your design into a responsive, accessible and animated html template.</p>
                 </div>
               </div>
-              <div className="flex-1 bg-primary p-8 ml-3 rounded" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200" data-aos-offset="200">
+              <div className="flex-1 bg-primary p-8 md:ml-3 rounded" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200" data-aos-offset="200">
                 <Image
                   src={serviceWordpress}
                   alt="Logo"
@@ -300,7 +300,7 @@ export default function Home() {
                 />
 
                 <div className='mt-8 text-center'>
-                  <h4 className='text-2xl font-bold'>Design to Wordpress</h4>
+                  <h4 className='text-xl md:text-2xl font-bold'>Design to Wordpress</h4>
                   <p className='mt-2'>I will convert your design into a responsive, accessible and animated html template.</p>
                 </div>
               </div>
@@ -310,20 +310,22 @@ export default function Home() {
         
         {/* Contact */}
         <section id="contact" className='py-64'>
-          {/* Header */}
-          <div className="flex flex-col items-center header text-center">
-            <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
-              <span className='text-primary font-bold text-lg'>Contact</span>
-              <h1 className="text-[40px] leading-tight md:leading-normal font-bold text-main">
-                Let’s talk about project
-              </h1>
-              <p className='text-secondary text-lg text-center md:max-w-[520px] mt-4'>
-                If you want to collaborate with me or get more information about our service, please contact me.
-              </p>
-            </div>
-            <div className='mt-16'>
-              <Link href={'/contact'} className='btn btn-primary mr-6' data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">Contact Now</Link>
-              <button className='btn btn-primary-outline' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="100">Download CV</button>
+          <div className="container">
+            {/* Header */}
+            <div className="flex flex-col items-center header text-center">
+              <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
+                <span className='text-primary font-bold text-md md:text-lg'>Contact</span>
+                <h1 className="text-4xl md:text-[40px] leading-tight md:leading-normal font-bold text-main">
+                  Let’s talk about project
+                </h1>
+                <p className='text-secondary text-md md:text-lg text-center md:max-w-[520px] mt-4'>
+                  If you want to collaborate with me or get more information about our service, please contact me.
+                </p>
+              </div>
+              <div className='mt-16'>
+                <Link href={'/contact'} className='py-4 px-8 btn-primary mr-6' data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">Contact Now</Link>
+                <button className='btn btn-primary-outline' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="100">Download CV</button>
+              </div>
             </div>
           </div>
         </section>
