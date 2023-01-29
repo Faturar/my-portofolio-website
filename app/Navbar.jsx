@@ -13,7 +13,7 @@ function Navbar() {
   const [toggle, setToggle] = useState(false);
     
   return (
-    <nav className='container  flex md:flex-row justify-between items-center py-4 mx-auto relative' data-aos="fade-down" data-aos-duration="1600" data-aos-delay="800">
+    <nav className='container z-[100] flex md:flex-row justify-between items-center py-4 mx-auto relative' data-aos="fade-down" data-aos-duration="1600" data-aos-delay="800">
       <div className={`-ml-6 left-8`}>
         <Link href="/">
           <Image
