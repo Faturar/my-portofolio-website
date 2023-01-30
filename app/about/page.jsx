@@ -1,10 +1,9 @@
 import React from 'react'
-import Image from 'next/image'
 
 import Loader from '../Loader'
 import Navbar from '../Navbar'
 import Footer from '../Footer'
-import Item from './Item'
+import Item from './SkillItem'
 
 // Image
 import html from '../../public/assets/icon/html.svg'
@@ -36,7 +35,7 @@ function about() {
       <main className='min-h-screen w-full text-center overflow-hidden'>
         <div className="container mt-28">
           {/* Header */}
-          <div className="header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
+          <div className="header" data-aos="fade" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="1000">
             <span className='header-title'>About</span>
             <h1 className="header-title-main">
               About Me
@@ -48,11 +47,11 @@ function about() {
 
           {/* About */}
           <div className='mt-16 md:mt-28'>
-            <p className='text-xl md:text-[36px] md:leading-10 text-secondary font-medium'>I am a freelance web developer and a college student based in Bogor, Indonesia. I have a strong interest in web development and have been working on projects since the age of sixteen. I am passionate about technology, and I am always looking for ways to improve my development skills. I am always open to learning new things and expanding my knowledge. When freetime I like to listening to  a podcast or music and playing game.</p>
+            <p className='text-xl md:text-[36px] md:leading-10 text-secondary font-medium' data-aos="fade" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="1000">I am a freelance web developer and a college student based in Bogor, Indonesia. I have a strong interest in web development and have been working on projects since the age of sixteen. I am passionate about technology, and I am always looking for ways to improve my development skills. I am always open to learning new things and expanding my knowledge. When freetime I like to listening to  a podcast or music and playing game.</p>
           </div>
 
           <div className='mt-24 md:mt-48 mb-24 md:mb-48'>
-            <h2 className='text-left text-3xl md:text-4xl text-medium text-main'>Tools & Skill</h2>
+            <h2 className='text-left text-3xl md:text-4xl text-medium text-main' data-aos="fade-right" data-aos-duration="1000" data-aos-offset="100">Tools & Skill</h2>
 
             <div className='flex flex-wrap mt-16 md:mt-20'>
               <Item image={html} title="HTML" category="Markup Language" level={5} addonClass="-ml-4" />
