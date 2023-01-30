@@ -21,6 +21,80 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 
 export default function Home() {
+  const data = [
+    {
+      image: portfolioAes,
+      title: 'Aes Shop - Plant Shop Website',
+      description: 'Webiste where you can browse and purchase a variety of plants, gardening supplies and tools. It also provide helpful resources, such as plant care guides and information about the different types of plants available.',
+      techstack: [
+        {
+          tech: 'HTML',
+          image: html
+        },
+        {
+          tech: 'CSS',
+          image: css
+        },
+        {
+          tech: 'Tailwind',
+          image: tailwind
+        },
+        {
+          tech: 'React Js',
+          image: reactjs
+        },
+      ],
+      link: '#',
+      delay: 1000,
+    },
+    {
+      image: portfolioGym,
+      title: 'Fit Body - Gym Webiste',
+      description: "Website that provides information about a physical fitness center. It typically includes details about the gym's location, hours of operation, membership options, class schedules, and other services offered.",
+      techstack: [
+        {
+          tech: 'HTML',
+          image: html
+        },
+        {
+          tech: 'CSS',
+          image: css
+        },
+        {
+          tech: 'React Js',
+          image: reactjs
+        },
+      ],
+      link: 'https://react-gym-faturar.netlify.app/',
+      delay: 1100,
+    },
+    {
+      image: portfolioMov,
+      title: 'Mov Movie - Movie Search Website',
+      description: 'Website that allows users to search for and find information about movies, such as title, release date, cast, and plot summary. Users can typically search by keywords and browse by genre or year.',
+      techstack: [
+        {
+          tech: 'HTML',
+          image: html
+        },
+        {
+          tech: 'CSS',
+          image: css
+        },
+        {
+          tech: 'Tailwind',
+          image: tailwind
+        },
+        {
+          tech: 'React Js',
+          image: reactjs
+        },
+      ],
+      link: 'https://mov-movie.web.app/',
+      delay: 1200,
+    },
+  ];
+
   return (
     <>
       <Loader />
@@ -73,175 +147,46 @@ export default function Home() {
             </div>
 
             {/* Items */}
-            <div className="flex flex-col md:flex-row items-center mt-20">
-              <div className="flex-1" data-aos="fade-right" data-aos-duration="1500">
-                <Image
-                  src={portfolioAes}
-                  alt=""
-                  height={400}
-                />
-              </div>
-
-              <div className="flex-1 mt-8 md:mt-0 md:pl-20" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="300">
-                <h4 className='text-2xl md:text-3xl font-bold text-main'>Aes Shop - Plant Shop Website</h4>
-                <p className='mt-4 text-secondary text-md md:text-lg'>Webiste where you can browse and purchase a variety of plants, gardening supplies and tools. It also provide helpful resources, such as plant care guides and information about the different types of plants available.</p>
-                <div className='mt-3 text-secondary text-md md:text-lg'>
-                  <span>Tech Stack:</span>
-
-                  {/* Tech stack */}
-                  <div className='flex items-center flex-wrap gap-x-4 mt-4'>
-                    <div className='flex'>
-                      <Image
-                        src={html}
-                        alt=""
-                        height={20}
-                      />
-                      <span className='ml-2'>HTML</span>
+            {data.map(item => (
+                <div className="flex flex-col md:flex-row items-center mt-20">
+                  <div className="flex-1" data-aos="fade-right" data-aos-duration="1500">
+                    <Image
+                      src={item.image}
+                      alt=""
+                      height={400}
+                    />
+                  </div>
+    
+                  <div className="flex-1 mt-8 md:mt-0 md:pl-20" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="300">
+                    <h4 className='text-2xl md:text-3xl font-bold text-main'>{item.title}</h4>
+                    <p className='mt-4 text-secondary text-md md:text-lg'>{item.description}</p>
+                    <div className='mt-3 text-secondary text-md md:text-lg'>
+                      <span>Tech Stack:</span>
+    
+                      {/* Tech stack */}
+                      <div className='flex items-center flex-wrap gap-x-4 mt-4'>
+                        {item.techstack.map(itema => (
+                          <div className='flex'>
+                              <Image
+                                  src={itema.image}
+                                  alt=""
+                                  height={20}
+                              />
+                              <span className='ml-2'>{itema.tech}</span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
-                    <div className='flex'>
-                      <Image
-                        src={css}
-                        alt=""
-                        height={20}
-                      />
-                      <span className='ml-2'>CSS</span>
-                    </div>
-                    <div className='flex'>
-                      <Image
-                        src={tailwind}
-                        alt=""
-                        height={20}
-                      />
-                      <span className='ml-2'>Tailwind</span>
-                    </div>
-                    <div className='flex'>
-                      <Image
-                        src={reactjs}
-                        alt=""
-                        height={20}
-                      />
-                      <span className='ml-2'>React Js</span>
+                    <div className='mt-12'>
+                      <Link href={item.link} className='text-primary hover:text-primary-active transition-all duration-300'>
+                        <span className='align-middle text-md md:text-lg font-semibold'>View Demo</span>
+                        <i className='bx bx-right-arrow-alt text-xl ml-1 align-middle'></i>
+                      </Link>
                     </div>
                   </div>
                 </div>
-                <div className='mt-12'>
-                  <Link href="#" className='text-primary hover:text-primary-active transition-all duration-300'>
-                    <span className='align-middle text-md md:text-lg font-semibold'>View Demo</span>
-                    <i className='bx bx-right-arrow-alt text-xl ml-1 align-middle'></i>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Item 2 */}
-            <div className="flex flex-col md:flex-row items-center mt-16">
-              <div className="flex-1" data-aos="fade-right" data-aos-duration="1500">
-                <Image
-                  src={portfolioGym}
-                  alt=""
-                  height={400}
-                />
-              </div>
-
-              <div className="flex-1 mt-8 md:mt-0 md:pl-20" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="300">
-                <h4 className='text-2xl md:text-3xl font-bold text-main'>Fit Body - Gym Webiste</h4>
-                <p className='mt-4 text-secondary text-md md:text-lg'>Website that provides information about a physical fitness center. It typically includes details about the gym's location, hours of operation, membership options, class schedules, and other services offered.</p>
-                <div className='mt-3 text-secondary text-md md:text-lg'>
-                  <span>Tech Stack:</span>
-                  <div className='flex items-center flex-wrap gap-x-4 mt-4'>
-                    <div className='flex'>
-                      <Image
-                        src={html}
-                        alt=""
-                        height={20}
-                      />
-                      <span className='ml-2'>HTML</span>
-                    </div>
-                    <div className='flex'>
-                      <Image
-                        src={css}
-                        alt=""
-                        height={20}
-                      />
-                      <span className='ml-2'>CSS</span>
-                    </div>
-                    <div className='flex'>
-                      <Image
-                        src={reactjs}
-                        alt=""
-                        height={20}
-                      />
-                      <span className='ml-2'>React Js</span>
-                    </div>
-                  </div>
-                </div>
-                <div className='mt-12'>
-                  <Link href="https://react-gym-faturar.netlify.app/" target="_blank" className='text-primary hover:text-primary-active transition-all duration-300'>
-                    <span className='align-middle text-md md:text-lg font-semibold'>View Demo</span>
-                    <i className='bx bx-right-arrow-alt text-xl ml-1 align-middle'></i>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Item 3 */}
-            <div className="flex flex-col md:flex-row items-center mt-16">
-              <div className="flex-1" data-aos="fade-right" data-aos-duration="1500">
-                <Image
-                  src={portfolioMov}
-                  alt=""
-                  height={400}
-                />
-              </div>
-
-              <div className="flex-1 mt-8 md:mt-0 md:pl-20" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="300">
-                <h4 className='text-2xl md:text-3xl font-bold text-main'>Mov Movie - Movie Search Website</h4>
-                <p className='mt-4 text-secondary text-md md:text-lg'>Website that allows users to search for and find information about movies, such as title, release date, cast, and plot summary. Users can typically search by keywords, browse by genre or year, and view trailers and reviews.</p>
-                <div className='mt-3 text-secondary text-md md:text-lg'>
-                  <span>Tech Stack:</span>
-                  <div className='flex items-center flex-wrap gap-x-4 mt-4'>
-                    <div className='flex'>
-                      <Image
-                        src={html}
-                        alt=""
-                        height={20}
-                      />
-                      <span className='ml-2'>HTML</span>
-                    </div>
-                    <div className='flex'>
-                      <Image
-                        src={css}
-                        alt=""
-                        height={20}
-                      />
-                      <span className='ml-2'>CSS</span>
-                    </div>
-                    <div className='flex'>
-                      <Image
-                        src={tailwind}
-                        alt=""
-                        height={20}
-                      />
-                      <span className='ml-2'>Tailwind</span>
-                    </div>
-                    <div className='flex'>
-                      <Image
-                        src={reactjs}
-                        alt=""
-                        height={20}
-                      />
-                      <span className='ml-2'>React Js</span>
-                    </div>
-                  </div>
-                </div>
-                <div className='mt-12'>
-                  <Link href="https://mov-movie.web.app/" target="_blank" className='text-primary hover:text-primary-active transition-all duration-300'>
-                    <span className='align-middle text-md md:text-lg font-semibold'>View Demo</span>
-                    <i className='bx bx-right-arrow-alt text-xl ml-1 align-middle'></i>
-                  </Link>
-                </div>
-              </div>
-            </div>
+              )
+            )}
 
             {/* Button */}
             <div className='flex justify-center mt-28' data-aos="fade-up" data-aos-duration="1500" data-aos-offset="200">
