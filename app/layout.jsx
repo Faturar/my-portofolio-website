@@ -14,6 +14,12 @@ export default function RootLayout({ children }) {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PEBNGZBZR6');
   }, []);
 
   return (
@@ -26,6 +32,9 @@ export default function RootLayout({ children }) {
       <head />
       <body className={`${mulish.className} relative`}>
         {children}
+
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PEBNGZBZR6"></script>
       </body>
     </html>
   )
