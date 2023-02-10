@@ -10,12 +10,19 @@ import WorkItem from './WorkItem'
 import portfolioAes from '../../public/assets/img/portfolio-aes.png'
 import portfolioGym from '../../public/assets/img/portfolio-gym.png'
 import portfolioMov from '../../public/assets/img/portfolio-mov.png'
+import portfolioPana from '../../public/assets/img/portfolio-pana.png'
+import portfolioTokoku from '../../public/assets/img/portfolio-tokoku.png'
+import portfolioKemang from '../../public/assets/img/portfolio-smkn1kemang.png'
 
 // Icon
 import reactjs from '../../public/assets/icon/reactjs.svg'
 import css from '../../public/assets/icon/css.svg'
 import html from '../../public/assets/icon/html.svg'
 import tailwind from '../../public/assets/icon/tailwind.svg'
+import bootstrap from '../../public/assets/icon/bootstrap5.svg'
+import codeigniter from '../../public/assets/icon/codeigniter.svg'
+import jquery from '../../public/assets/icon/jquery.svg'
+import wordpress from '../../public/assets/icon/wordpress.svg'
 
 function work() {
   const data = [
@@ -41,7 +48,7 @@ function work() {
           image: reactjs
         },
       ],
-      link: '#',
+      link: 'https://aesshop.netlify.app/',
       delay: 1000,
     },
     {
@@ -87,8 +94,71 @@ function work() {
           image: reactjs
         },
       ],
-      link: 'https://mov-movie.web.app/',
+      link: 'https://mov-movie.netlify.app/',
       delay: 1200,
+    },
+    {
+      image: portfolioPana,
+      title: 'Pana Hotel - Hotel Landing Page',
+      description: 'A hsingle web page specifically designed for promoting a hotel and its services. The purpose is to provide prospective guests with a comprehensive overview of the hotel, its amenities, room types, location, and special offers. The page designed with the user experience in mind and should be easy to navigate, visually appealing, and informative.',
+      techstack: [
+        {
+          tech: 'HTML',
+          image: html
+        },
+        {
+          tech: 'CSS',
+          image: css
+        },
+        {
+          tech: 'Bootstrap',
+          image: bootstrap
+        },
+      ],
+      link: 'https://panahotel.netlify.app/',
+      delay: 0,
+    },
+    {
+      image: portfolioTokoku,
+      title: 'Tokoku - Store Management System',
+      description: 'A shop information system is used to manage the day-to-day operations of a store. The system helps store owners and managers to efficiently manage tasks such as inventory management, sales tracking, financial reporting, and employee management.',
+      techstack: [
+        {
+          tech: 'HTML',
+          image: html
+        },
+        {
+          tech: 'CSS',
+          image: css
+        },
+        {
+          tech: 'Bootstrap',
+          image: bootstrap
+        },
+        {
+          tech: 'Codeigniter 4',
+          image: codeigniter
+        },
+        {
+          tech: 'Jquery',
+          image: jquery
+        },
+      ],
+      link: 'https://toko.faturar.my.id',
+      delay: 100,
+    },
+    {
+      image: portfolioKemang,
+      title: 'SMKN 1 Kemang Website',
+      description: 'A school website is a digital platform designed to provide information about a school and its programs, facilities, and community to students, parents, staff, and other stakeholders. The main purpose of website is to serve as a hub for communication and information-sharing, and to promote the school mission and values.',
+      techstack: [
+        {
+          tech: 'Wordpress',
+          image: wordpress
+        },
+      ],
+      link: 'https://toko.faturar.my.id',
+      delay: 200,
     },
   ]
 
@@ -111,8 +181,8 @@ function work() {
           
           {/* Main */}
           <div className="flex flex-wrap mt-16">
-            {data.map(item => (
-                <WorkItem image={item.image} title={item.title}  description={item.description} techstack={item.techstack} link={item.link}  delay={item.delay} />
+            {data.map((item, key) => (
+                <WorkItem key={key} image={item.image} title={item.title}  description={item.description} techstack={item.techstack} link={item.link}  delay={item.delay} />
               )
             )}
           </div>
@@ -131,8 +201,8 @@ function work() {
                     If you want to collaborate with me or get more information about our service, please contact me.
                   </p>
                 </div>
-                <div className='mt-16 w-full md:w-[360px] flex justify-center md:justify-between flex-wrap space-y-4 md:space-y-0'>
-                  <Link href={'/contact'} className='py-3.5 px-8 btn-primary' data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">Contact Now</Link>
+                <div className='mt-16 w-full md:w-[360px] flex justify-center md:justify-between flex-wrap'>
+                  <Link href={'/contact'} className='btn btn-primary mr-2' data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">Contact Now</Link>
                   <button className='btn btn-primary-outline' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="100">Download CV</button>
                 </div>
               </div>
