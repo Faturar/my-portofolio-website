@@ -157,7 +157,7 @@ function work() {
           image: wordpress
         },
       ],
-      link: 'https://toko.faturar.my.id',
+      link: 'https://smknegerisatukemang.sch.id',
       delay: 200,
     },
   ]
