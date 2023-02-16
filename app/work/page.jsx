@@ -13,6 +13,9 @@ import portfolioMov from '../../public/assets/img/portfolio-mov.png'
 import portfolioPana from '../../public/assets/img/portfolio-pana.png'
 import portfolioTokoku from '../../public/assets/img/portfolio-tokoku.png'
 import portfolioKemang from '../../public/assets/img/portfolio-smkn1kemang.png'
+import portfolioSribu from '../../public/assets/img/portfolio-sribu.png'
+import portfolioGimbo from '../../public/assets/img/portfolio-gimbo.png'
+import portfolioSerunting from '../../public/assets/img/portfolio-serunting.png'
 
 // Icon
 import reactjs from '../../public/assets/icon/reactjs.svg'
@@ -150,6 +153,45 @@ function work() {
     {
       image: portfolioKemang,
       title: 'SMKN 1 Kemang Website',
+      description: 'A school website is a digital platform designed to provide information about a school and its programs, facilities, and community to students, parents, staff, and other stakeholders. The main purpose of website is to serve as a hub for communication and information-sharing, and to promote the school mission and values.',
+      techstack: [
+        {
+          tech: 'Wordpress',
+          image: wordpress
+        },
+      ],
+      link: 'https://smknegerisatukemang.sch.id',
+      delay: 200,
+    },
+    {
+      image: portfolioSribu,
+      title: 'Sribu Travel',
+      description: 'A school website is a digital platform designed to provide information about a school and its programs, facilities, and community to students, parents, staff, and other stakeholders. The main purpose of website is to serve as a hub for communication and information-sharing, and to promote the school mission and values.',
+      techstack: [
+        {
+          tech: 'Wordpress',
+          image: wordpress
+        },
+      ],
+      link: 'https://smknegerisatukemang.sch.id',
+      delay: 200,
+    },
+    {
+      image: portfolioGimbo,
+      title: 'PT. Gimbo Sakti Jaya Website',
+      description: 'A school website is a digital platform designed to provide information about a school and its programs, facilities, and community to students, parents, staff, and other stakeholders. The main purpose of website is to serve as a hub for communication and information-sharing, and to promote the school mission and values.',
+      techstack: [
+        {
+          tech: 'Wordpress',
+          image: wordpress
+        },
+      ],
+      link: 'https://smknegerisatukemang.sch.id',
+      delay: 200,
+    },
+    {
+      image: portfolioSerunting,
+      title: 'PT. Serunting Sakti Jaya Website',
       description: 'A school website is a digital platform designed to provide information about a school and its programs, facilities, and community to students, parents, staff, and other stakeholders. The main purpose of website is to serve as a hub for communication and information-sharing, and to promote the school mission and values.',
       techstack: [
         {
