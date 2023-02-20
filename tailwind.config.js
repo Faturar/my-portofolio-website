@@ -15,7 +15,7 @@ module.exports = {
     },
     colors: {
       'transparent': 'transparent',
-      'primary': '#317EFF',
+      'primary': '#3C79F5',
       'primary-light': '#F5F9FF',
       'primary-hover': '#448AFF',
       'primary-active': '#87B4FF',
