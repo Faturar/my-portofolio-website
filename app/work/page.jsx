@@ -8,7 +8,6 @@ import WorkItem from './WorkItem'
 
 // Image
 import portfolioAes from '../../public/assets/img/portfolio-aes.png'
-import portfolioGym from '../../public/assets/img/portfolio-gym.png'
 import portfolioMov from '../../public/assets/img/portfolio-mov.png'
 import portfolioPana from '../../public/assets/img/portfolio-pana.png'
 import portfolioTokoku from '../../public/assets/img/portfolio-tokoku.png'
@@ -55,9 +54,9 @@ function work() {
       delay: 1000,
     },
     {
-      image: portfolioGym,
-      title: 'Fit Body - Gym Webiste',
-      description: "Website that provides information about a physical fitness center. It typically includes details about the gym's location, hours of operation, membership options, class schedules, and other services offered.",
+      image: portfolioPana,
+      title: 'Pana Hotel - Hotel Landing Page',
+      description: 'A single web page specifically designed for promoting a hotel and its services. The purpose is to provide prospective guests with a comprehensive overview of the hotel, its amenities, room types, location, and special offers.',
       techstack: [
         {
           tech: 'HTML',
@@ -68,11 +67,11 @@ function work() {
           image: css
         },
         {
-          tech: 'React Js',
-          image: reactjs
+          tech: 'Bootstrap',
+          image: bootstrap
         },
       ],
-      link: 'https://react-gym-faturar.netlify.app/',
+      link: 'https://panahotel.netlify.app/',
       delay: 1100,
     },
     {
@@ -101,30 +100,9 @@ function work() {
       delay: 1200,
     },
     {
-      image: portfolioPana,
-      title: 'Pana Hotel - Hotel Landing Page',
-      description: 'A hsingle web page specifically designed for promoting a hotel and its services. The purpose is to provide prospective guests with a comprehensive overview of the hotel, its amenities, room types, location, and special offers. The page designed with the user experience in mind and should be easy to navigate, visually appealing, and informative.',
-      techstack: [
-        {
-          tech: 'HTML',
-          image: html
-        },
-        {
-          tech: 'CSS',
-          image: css
-        },
-        {
-          tech: 'Bootstrap',
-          image: bootstrap
-        },
-      ],
-      link: 'https://panahotel.netlify.app/',
-      delay: 0,
-    },
-    {
       image: portfolioTokoku,
       title: 'Tokoku - Store Management System',
-      description: 'A shop information system is used to manage the day-to-day operations of a store. The system helps store owners and managers to efficiently manage tasks such as inventory management, sales tracking, financial reporting, and employee management.',
+      description: 'Store information system is used to manage the operations of a store. The system helps store owners to efficiently manage tasks such as inventory management, sales tracking, and financial reporting',
       techstack: [
         {
           tech: 'HTML',
@@ -153,7 +131,7 @@ function work() {
     {
       image: portfolioKemang,
       title: 'SMKN 1 Kemang Website',
-      description: 'A school website is a digital platform designed to provide information about a school and its programs, facilities, and community to students, parents, staff, and other stakeholders. The main purpose of website is to serve as a hub for communication and information-sharing, and to promote the school mission and values.',
+      description: 'School website is a platform designed to provide information about a school and its programs, facilities, and community to students, parents, staff, and other stakeholders. The main purpose of website is to serve as a hub for information-sharing.',
       techstack: [
         {
           tech: 'Wordpress',
