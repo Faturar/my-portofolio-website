@@ -15,6 +15,7 @@ import portfolioKemang from '../../public/assets/img/portfolio-smkn1kemang.png'
 import portfolioSribu from '../../public/assets/img/portfolio-sribu.png'
 import portfolioGimbo from '../../public/assets/img/portfolio-gimbo.png'
 import portfolioSerunting from '../../public/assets/img/portfolio-serunting.png'
+import portfolioProlist from '../../public/assets/img/portofolio-prolist2.png'
 
 // Icon
 import reactjs from '../../public/assets/icon/reactjs.svg'
@@ -22,6 +23,7 @@ import css from '../../public/assets/icon/css.svg'
 import html from '../../public/assets/icon/html.svg'
 import tailwind from '../../public/assets/icon/tailwind.svg'
 import bootstrap from '../../public/assets/icon/bootstrap5.svg'
+import laravel from '../../public/assets/icon/laravel.svg'
 import codeigniter from '../../public/assets/icon/codeigniter.svg'
 import jquery from '../../public/assets/icon/jquery.svg'
 import wordpress from '../../public/assets/icon/wordpress.svg'
@@ -98,6 +100,31 @@ function work() {
       ],
       link: 'https://mov-movie.netlify.app/',
       delay: 1200,
+    },
+    {
+      image: portfolioProlist,
+      title: 'Prolist - Property Listing Web Application',
+      description: 'Property listing web application streamlines the process of renting, or buying properties by connecting potential buyers with landlords, sellers, or agents. While functionality remains the same, its specific features and target audience can vary depending on the type of properties.',
+      techstack: [
+        {
+          tech: 'HTML',
+          image: html
+        },
+        {
+          tech: 'CSS',
+          image: css
+        },
+        {
+          tech: 'Bootstrap',
+          image: bootstrap
+        },
+        {
+          tech: 'Laravel',
+          image: laravel
+        },
+      ],
+      link: 'https://property.faturardev.my.id/',
+      delay: 100,
     },
     {
       image: portfolioTokoku,

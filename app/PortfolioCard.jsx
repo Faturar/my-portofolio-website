@@ -34,7 +34,7 @@ export default function PortfolioCard({item}) {
                 </div>
                 <div className='mt-12'>
                     <Link href={item.link} target="_blank" className='text-primary hover:text-primary-active transition-all duration-300'>
-                        <span className='align-middle text-md md:text-lg font-medium'>View Demo</span>
+                        <span className='align-middle text-md md:text-lg font-medium'>Detail</span>
                         <i className='bx bx-right-arrow-alt text-xl ml-1 align-middle'></i>
                     </Link>
                 </div>

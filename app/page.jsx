@@ -15,7 +15,7 @@ import main from '../public/assets/img/main.svg'
 
 // Portfolio
 import portfolioAes from '../public/assets/img/portfolio-aes.png'
-import portfolioGym from '../public/assets/img/portfolio-gym.png'
+import portfolioProlist from '../public/assets/img/portofolio-prolist2.png'
 import portfolioMov from '../public/assets/img/portfolio-mov.png'
 import serviceHtml from '../public/assets/img/service-html.png'
 import serviceReact from '../public/assets/img/service-react-next.png'
@@ -26,9 +26,36 @@ import reactjs from '../public/assets/icon/reactjs.svg'
 import css from '../public/assets/icon/css.svg'
 import html from '../public/assets/icon/html.svg'
 import tailwind from '../public/assets/icon/tailwind.svg'
+import laravel from '../public/assets/icon/laravel.svg'
+import bootstrap from '../public/assets/icon/bootstrap5.svg'
 
 export default function Home() {
   const data = [
+    {
+      image: portfolioProlist,
+      title: 'Prolist - Property Listing Web Application',
+      description: 'A property listing web application streamlines the process of finding, renting, or buying properties by connecting potential tenants or buyers with landlords, sellers, or agents. While the core functionality remains the same, its specific features and target audience can vary depending on the type of properties.',
+      techstack: [
+        {
+          tech: 'HTML',
+          image: html
+        },
+        {
+          tech: 'CSS',
+          image: css
+        },
+        {
+          tech: 'Bootstrap',
+          image: bootstrap
+        },
+        {
+          tech: 'Laravel',
+          image: laravel
+        },
+      ],
+      link: 'https://property.faturardev.my.id/',
+      delay: 1000,
+    },
     {
       image: portfolioAes,
       title: 'Aes Shop - Plant Shop Website',
@@ -53,27 +80,6 @@ export default function Home() {
       ],
       link: 'https://aesshop.netlify.app/',
       delay: 1000,
-    },
-    {
-      image: portfolioGym,
-      title: 'Fit Body - Gym Webiste',
-      description: "Website that provides information about a physical fitness center. It typically includes details about the gym's location, hours of operation, membership options, class schedules, and other services offered.",
-      techstack: [
-        {
-          tech: 'HTML',
-          image: html
-        },
-        {
-          tech: 'CSS',
-          image: css
-        },
-        {
-          tech: 'React Js',
-          image: reactjs
-        },
-      ],
-      link: 'https://react-gym-faturar.netlify.app/',
-      delay: 1100,
     },
     {
       image: portfolioMov,
