@@ -24,6 +24,7 @@ module.exports = {
       'secondary-hover': '#A2AAB6',
       'secondary-active': '#D9D9D9',
       'white': '#ffffff',
+      'slate': 'rgb(243 244 246);',
     },
     extend: {
       animation: {
