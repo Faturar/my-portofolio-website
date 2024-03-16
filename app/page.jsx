@@ -17,6 +17,11 @@ import main from '../public/assets/img/main.svg'
 import portfolioAes from '../public/assets/img/portfolio-aes.png'
 import portfolioProlist from '../public/assets/img/portofolio-prolist2.png'
 import portfolioMov from '../public/assets/img/portfolio-mov.png'
+import portfolioGimbo from '../public/assets/img/portfolio-gimbo.png'
+import portfolioSerunting from '../public/assets/img/portfolio-serunting.png'
+import portfolioTokoku from '../public/assets/img/portfolio-tokoku.png'
+import portfolioWidar from '../public/assets/img/portofolio-widar.png'
+
 import serviceHtml from '../public/assets/img/service-html.png'
 import serviceReact from '../public/assets/img/service-react-next.png'
 import serviceWordpress from '../public/assets/img/service-wordpress.png'
@@ -27,7 +32,10 @@ import css from '../public/assets/icon/css.svg'
 import html from '../public/assets/icon/html.svg'
 import tailwind from '../public/assets/icon/tailwind.svg'
 import laravel from '../public/assets/icon/laravel.svg'
+import codeigniter from '../public/assets/icon/codeigniter.svg'
 import bootstrap from '../public/assets/icon/bootstrap5.svg'
+import jquery from '../public/assets/icon/jquery.svg'
+import wordpress from '../public/assets/icon/wordpress.svg'
 
 export default function Home() {
   const data = [
@@ -57,9 +65,9 @@ export default function Home() {
       delay: 1000,
     },
     {
-      image: portfolioAes,
-      title: 'Aes Shop - Plant Shop Website',
-      description: 'Webiste where you can browse and purchase a variety of plants, gardening supplies and tools. It also provide helpful resources, such as plant care guides and information about the different types of plants available.',
+      image: portfolioTokoku,
+      title: 'Tokoku - Store Management System',
+      description: 'Store information system is used to manage the operations of a store. The system helps store owners to efficiently manage tasks such as inventory management, sales tracking, and financial reporting',
       techstack: [
         {
           tech: 'HTML',
@@ -70,16 +78,59 @@ export default function Home() {
           image: css
         },
         {
-          tech: 'Tailwind',
-          image: tailwind
+          tech: 'Bootstrap',
+          image: bootstrap
         },
         {
-          tech: 'React Js',
-          image: reactjs
+          tech: 'Codeigniter 4',
+          image: codeigniter
+        },
+        {
+          tech: 'Jquery',
+          image: jquery
         },
       ],
-      link: 'https://aesshop.netlify.app/',
-      delay: 1000,
+      link: 'https://toko.faturar.my.id',
+      delay: 100,
+    },
+    {
+      image: portfolioWidar,
+      title: 'PT. Widar Mandripa Nusantara',
+      description: "This commitment is also echoed by PT Widar Mandripa Nusantara in the energy sector. The website aims to demonstrate the company's expertise and dedication, to instill confidence in potential clients regarding the company's capabilities.",
+      techstack: [
+        {
+          tech: 'Wordpress',
+          image: wordpress
+        },
+      ],
+      link: 'https://wmnusantara.co.id',
+      delay: 300,
+    },
+    {
+      image: portfolioSerunting,
+      title: 'PT. Serunting Sakti Jaya Website',
+      description: 'PT Serunting Sakti Jaya, a leading pest control service provider, to present an online presence that reflects their professionalism and dedication. These websites provide information and reassure potential clients of their ability to deal with pest problems.',
+      techstack: [
+        {
+          tech: 'Wordpress',
+          image: wordpress
+        },
+      ],
+      link: 'https://seruntingpestcontrol.com',
+      delay: 200,
+    },  
+    {
+      image: portfolioGimbo,
+      title: 'PT. Gimbo Sakti Jaya Website',
+      description: 'PT Gimbo Sakti Jaya, a leading pest control service provider, to present an online presence that reflects their professionalism and dedication. These websites provide information and reassure potential clients of their ability to deal with pest problems.',
+      techstack: [
+        {
+          tech: 'Wordpress',
+          image: wordpress
+        },
+      ],
+      link: 'https://gimbosaktijaya.com',
+      delay: 200,
     },
     {
       image: portfolioMov,

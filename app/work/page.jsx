@@ -16,6 +16,7 @@ import portfolioSribu from '../../public/assets/img/portfolio-sribu.png'
 import portfolioGimbo from '../../public/assets/img/portfolio-gimbo.png'
 import portfolioSerunting from '../../public/assets/img/portfolio-serunting.png'
 import portfolioProlist from '../../public/assets/img/portofolio-prolist2.png'
+import portfolioWidar from '../../public/assets/img/portofolio-widar.png'
 
 // Icon
 import reactjs from '../../public/assets/icon/reactjs.svg'
@@ -30,77 +31,6 @@ import wordpress from '../../public/assets/icon/wordpress.svg'
 
 function work() {
   const data = [
-    {
-      image: portfolioAes,
-      title: 'Aes Shop - Plant Shop Website',
-      description: 'Webiste where you can browse and purchase a variety of plants, gardening supplies and tools. It also provide helpful resources, such as plant care guides and information about the different types of plants available.',
-      techstack: [
-        {
-          tech: 'HTML',
-          image: html
-        },
-        {
-          tech: 'CSS',
-          image: css
-        },
-        {
-          tech: 'Tailwind',
-          image: tailwind
-        },
-        {
-          tech: 'React Js',
-          image: reactjs
-        },
-      ],
-      link: 'https://aesshop.netlify.app/',
-      delay: 1000,
-    },
-    {
-      image: portfolioPana,
-      title: 'Pana Hotel - Hotel Landing Page',
-      description: 'A single web page specifically designed for promoting a hotel and its services. The purpose is to provide prospective guests with a comprehensive overview of the hotel, its amenities, room types, location, and special offers.',
-      techstack: [
-        {
-          tech: 'HTML',
-          image: html
-        },
-        {
-          tech: 'CSS',
-          image: css
-        },
-        {
-          tech: 'Bootstrap',
-          image: bootstrap
-        },
-      ],
-      link: 'https://panahotel.netlify.app/',
-      delay: 1100,
-    },
-    {
-      image: portfolioMov,
-      title: 'Mov Movie - Movie Search Website',
-      description: 'Website that allows users to search for and find information about movies, such as title, release date, cast, and plot summary. Users can typically search by keywords and browse by genre or year.',
-      techstack: [
-        {
-          tech: 'HTML',
-          image: html
-        },
-        {
-          tech: 'CSS',
-          image: css
-        },
-        {
-          tech: 'Tailwind',
-          image: tailwind
-        },
-        {
-          tech: 'React Js',
-          image: reactjs
-        },
-      ],
-      link: 'https://mov-movie.netlify.app/',
-      delay: 1200,
-    },
     {
       image: portfolioProlist,
       title: 'Prolist - Property Listing Web Application',
@@ -156,35 +86,47 @@ function work() {
       delay: 100,
     },
     {
-      image: portfolioKemang,
-      title: 'SMKN 1 Kemang Website',
-      description: 'School website is a platform designed to provide information about a school and its programs, facilities, and community to students, parents, staff, and other stakeholders. The main purpose of website is to serve as a hub for information-sharing.',
+      image: portfolioSribu,
+      title: 'Sribu Travel',
+      description: 'The travel booking web application is a digital platform that allows users to plan and book their trips easily and efficiently. With comprehensive features, this application provides access to various travel services, including flights, accommodations, ground transportation, and tourist activities.',
       techstack: [
         {
-          tech: 'Wordpress',
-          image: wordpress
+          tech: 'HTML',
+          image: html
+        },
+        {
+          tech: 'CSS',
+          image: css
+        },
+        {
+          tech: 'Bootstrap',
+          image: bootstrap
+        },
+        {
+          tech: 'Laravel',
+          image: laravel
         },
       ],
       link: 'https://smknegerisatukemang.sch.id',
       delay: 200,
     },
     {
-      image: portfolioSribu,
-      title: 'Sribu Travel',
-      description: 'A school website is a digital platform designed to provide information about a school and its programs, facilities, and community to students, parents, staff, and other stakeholders. The main purpose of website is to serve as a hub for communication and information-sharing, and to promote the school mission and values.',
+      image: portfolioWidar,
+      title: 'PT. Widar Mandripa Nusantara',
+      description: "This commitment is also echoed by PT Widar Mandripa Nusantara in the energy sector. The website aims to demonstrate the company's expertise and dedication, to instill confidence in potential clients regarding the company's capabilities.",
       techstack: [
         {
           tech: 'Wordpress',
           image: wordpress
         },
       ],
-      link: 'https://smknegerisatukemang.sch.id',
-      delay: 200,
+      link: 'https://wmnusantara.co.id',
+      delay: 300,
     },
     {
       image: portfolioGimbo,
       title: 'PT. Gimbo Sakti Jaya Website',
-      description: 'A school website is a digital platform designed to provide information about a school and its programs, facilities, and community to students, parents, staff, and other stakeholders. The main purpose of website is to serve as a hub for communication and information-sharing, and to promote the school mission and values.',
+      description: 'PT Gimbo Sakti Jaya, a leading pest control service provider, to present an online presence that reflects their professionalism and dedication. These websites provide information and reassure potential clients of their ability to deal with pest problems.',
       techstack: [
         {
           tech: 'Wordpress',
@@ -197,7 +139,91 @@ function work() {
     {
       image: portfolioSerunting,
       title: 'PT. Serunting Sakti Jaya Website',
-      description: 'A school website is a digital platform designed to provide information about a school and its programs, facilities, and community to students, parents, staff, and other stakeholders. The main purpose of website is to serve as a hub for communication and information-sharing, and to promote the school mission and values.',
+      description: 'PT Serunting Sakti Jaya, a leading pest control service provider, to present an online presence that reflects their professionalism and dedication. These websites provide information and reassure potential clients of their ability to deal with pest problems.',
+      techstack: [
+        {
+          tech: 'Wordpress',
+          image: wordpress
+        },
+      ],
+      link: 'https://smknegerisatukemang.sch.id',
+      delay: 200,
+    },
+    {
+      image: portfolioMov,
+      title: 'Mov Movie - Movie Search Website',
+      description: 'Website that allows users to search for and find information about movies, such as title, release date, cast, and plot summary. Users can typically search by keywords and browse by genre or year.',
+      techstack: [
+        {
+          tech: 'HTML',
+          image: html
+        },
+        {
+          tech: 'CSS',
+          image: css
+        },
+        {
+          tech: 'Tailwind',
+          image: tailwind
+        },
+        {
+          tech: 'React Js',
+          image: reactjs
+        },
+      ],
+      link: 'https://mov-movie.netlify.app/',
+      delay: 1200,
+    },
+    {
+      image: portfolioAes,
+      title: 'Aes Shop - Plant Shop Website',
+      description: 'Webiste where you can browse and purchase a variety of plants, gardening supplies and tools. It also provide helpful resources, such as plant care guides and information about the different types of plants available.',
+      techstack: [
+        {
+          tech: 'HTML',
+          image: html
+        },
+        {
+          tech: 'CSS',
+          image: css
+        },
+        {
+          tech: 'Tailwind',
+          image: tailwind
+        },
+        {
+          tech: 'React Js',
+          image: reactjs
+        },
+      ],
+      link: 'https://aesshop.netlify.app/',
+      delay: 1000,
+    },
+    {
+      image: portfolioPana,
+      title: 'Pana Hotel - Hotel Landing Page',
+      description: 'A single web page specifically designed for promoting a hotel and its services. The purpose is to provide prospective guests with a comprehensive overview of the hotel, its amenities, room types, location, and special offers.',
+      techstack: [
+        {
+          tech: 'HTML',
+          image: html
+        },
+        {
+          tech: 'CSS',
+          image: css
+        },
+        {
+          tech: 'Bootstrap',
+          image: bootstrap
+        },
+      ],
+      link: 'https://panahotel.netlify.app/',
+      delay: 1100,
+    },
+    {
+      image: portfolioKemang,
+      title: 'SMKN 1 Kemang Website',
+      description: 'School website is a platform designed to provide information about a school and its programs, facilities, and community to students, parents, staff, and other stakeholders. The main purpose of website is to serve as a hub for information-sharing.',
       techstack: [
         {
           tech: 'Wordpress',
